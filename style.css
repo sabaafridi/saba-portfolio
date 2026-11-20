@@ -1,0 +1,405 @@
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #faf8ff;
+    color: #333;
+}
+
+/* NAVIGATION BAR */
+
+header {
+    background-color: #29203f;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #d8c5ff;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c8a9ff;
+}
+
+/* HOME SECTION */
+
+.home {
+    min-height: 550px;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: linear-gradient(120deg, #eee5ff, #faf8ff);
+}
+
+.home-content {
+    max-width: 620px;
+}
+
+.welcome,
+.section-tag {
+    color: #8964c2;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.home h1 {
+    font-size: 45px;
+    color: #29203f;
+    margin-bottom: 12px;
+}
+
+.home h1 span {
+    color: #8964c2;
+}
+
+.home h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #6e5494;
+}
+
+.home p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* PROFILE CIRCLE */
+
+.profile {
+    text-align: center;
+}
+
+.profile-circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #bda0ed, #7552a5);
+    border: 9px solid white;
+    box-shadow: 0 8px 25px rgba(60, 35, 100, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-circle span {
+    font-size: 65px;
+    color: white;
+    font-weight: bold;
+}
+
+.profile p {
+    margin-top: 15px;
+    color: #7552a5;
+    font-size: 14px;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    background-color: #7552a5;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #49316f;
+    transform: translateY(-3px);
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 75px 10%;
+    text-align: center;
+}
+
+.heading {
+    font-size: 32px;
+    color: #29203f;
+    margin-bottom: 35px;
+}
+
+.alternate {
+    background-color: #f0eaff;
+}
+
+/* ABOUT SECTION */
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: left;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+/* CARDS */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.card {
+    background-color: white;
+    padding: 28px;
+    width: 300px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(70, 40, 100, 0.07);
+    border-bottom: 4px solid #b99bdf;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 22px rgba(70, 40, 100, 0.12);
+}
+
+.card h3 {
+    color: #7552a5;
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+.card h4 {
+    color: #4c3a65;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+.date {
+    display: inline-block;
+    color: #8964c2;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ACHIEVEMENT */
+
+.achievement {
+    background-color: #e3d5fa;
+    max-width: 700px;
+    margin: 35px auto 0;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.achievement h3 {
+    color: #503578;
+    margin-bottom: 12px;
+}
+
+/* SKILLS */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.skill-box {
+    background-color: white;
+    width: 280px;
+    padding: 28px;
+    text-align: left;
+    border-radius: 12px;
+    border-left: 5px solid #9a76c9;
+    box-shadow: 0 4px 15px rgba(70, 40, 100, 0.07);
+}
+
+.skill-box h3 {
+    color: #7552a5;
+    margin-bottom: 18px;
+}
+
+.skill-box ul {
+    padding-left: 20px;
+}
+
+.skill-box li {
+    margin-bottom: 13px;
+    line-height: 1.5;
+}
+
+/* PROJECTS */
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project-label {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 12px;
+    background-color: #eee5ff;
+    color: #69468f;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+    background: linear-gradient(120deg, #eee5ff, #faf8ff);
+}
+
+.contact p {
+    line-height: 1.8;
+}
+
+.contact-info {
+    margin: 25px 0;
+    color: #503578;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #29203f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 6px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 850px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home h1 {
+        font-size: 34px;
+    }
+
+    .profile-circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile-circle span {
+        font-size: 50px;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    nav a {
+        font-size: 12px;
+        margin: 6px;
+    }
+
+    .home h1 {
+        font-size: 29px;
+    }
+
+    .home h2 {
+        font-size: 21px;
+    }
+
+    .heading {
+        font-size: 27px;
+    }
+
+    .card,
+    .skill-box {
+        width: 100%;
+    }
+}
+
+/* ACHIEVEMENTS AND AWARDS */
+
+.achievement-card {
+    text-align: center;
+    border-bottom: 4px solid #b99bdf;
+}
+
+.award {
+    display: inline-block;
+    background-color: #eee5ff;
+    color: #69468f;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.achievement-card h3 {
+    margin-bottom: 15px;
+}
